@@ -8,8 +8,8 @@ import streamlit as st
 st.title("Bike Sharing Data Analysis")
 
 # Specify the paths to your CSV files
-day_file_path = 'data/day.csv'  # Change this path if needed
-hour_file_path = 'data/hour.csv'  # Change this path if needed
+day_file_path = '../data/day.csv'  # Change this path if needed
+hour_file_path = '../data/hour.csv'  # Change this path if needed
 
 # Load the data
 day_data = pd.read_csv(day_file_path)
