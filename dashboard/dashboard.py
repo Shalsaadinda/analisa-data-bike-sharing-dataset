@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
+import os
 
 # Title of the Streamlit app
 st.title("Bike Sharing Data Analysis")
