@@ -1,20 +1,17 @@
-import streamlit as st
 import pandas as pd
 import numpy as np
-import seaborn as sns
 import matplotlib.pyplot as plt
-import os
+import seaborn as sns
+import streamlit as st
 
 # Title of the Streamlit app
 st.title("Bike Sharing Data Analysis")
 
-# Specify the directory where your CSV files are located
-DATA_DIR = '../data/'  # Change this path if needed
+# Specify the paths to your CSV files
+day_file_path = 'data/day.csv'  # Change this path if needed
+hour_file_path = 'data/hour.csv'  # Change this path if needed
 
 # Load the data
-day_file_path = os.path.join(DATA_DIR, 'day.csv')
-hour_file_path = os.path.join(DATA_DIR, 'hour.csv')
-
 day_data = pd.read_csv(day_file_path)
 hour_data = pd.read_csv(hour_file_path)
 
